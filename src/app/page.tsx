@@ -1,36 +1,39 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 
-//graphql tag
-//npm i
-//npm install graphql-tag
-const getData  = async() =>{
-  const res = await fetch("https://countries.trevorblades.com/",{
-    method:"POST",
-    headers:{"Content-Type":"application/json"},
-    cache:"force-cache",
-    body: JSON.stringify({
-      query: `query GetCountries {
-        countries{
-          name
+// //graphql tag
+// //npm i
+// //npm install graphql-tag
+// const getData  = async() =>{
+//   const res = await fetch("https://countries.trevorblades.com/",{
+//     method:"POST",
+//     headers:{"Content-Type":"application/json"},
+//     cache:"force-cache",
+//     body: JSON.stringify({
+//       query: `query GetCountries {
+//         countries{
+//           name
           
            
-          }
+//           }
         
         
-        }`
-    })
+//         }`
+//     })
 
-  })
-  const data = await res.json()
-return data
-}
+//   })
+//   const data = await res.json()
+// return data
+// }
 
     
 
-export default function Home(){
-  return(
-    <main className="flex min-h-screen flex-col ">
+// export default function Home(){
+//   return(
+//     <main className="flex min-h-screen flex-col ">
 
-    </main>
-  )
-}
+//     </main>
+//   )
+// }
+
+
+//apolo server
